@@ -1,0 +1,7 @@
+for i,v in pairs(game.Workspace:GetChildren()) do
+        for i,v in pairs(v:GetChildren()) do
+            if v:FindFirstChildOfClass("TouchTransmitter") and v:FindFirstChildOfClass("SurfaceGui") then
+                v:Destroy()
+            end
+        end
+    end
